@@ -10,41 +10,20 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    /*
-    En este ejemplo vamos a ver como podemos trabajar con un menu de
-    opciones en android
 
-    En primer lugar, debes ubicar crear un archivo de menú y ubicarlo en la carpeta
-    res/menu/nombre_archivo.xml.
-
-    Desde Android Studio se resume a dar click derecho en tu carpeta res y luego seleccionar
-    New > Android Resource File.
-
-    Al desplegarse la ventana de configuración, selecciona "Menu" en el tipo de recursos y
-    luego ponemos su nombre "main_menu"
-
-    Podemos crear los dibujos en New > Vector Asset en la carpeta de drawable
-    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    //Este metodo se llamara cuando se cree la actividad e inflaremos el menu
-    //El parametro menu sera el objeto donde inflaremos el layout, que nos lo
-    //crea android
 
-    //En el valor de retorno decimos si queremos mostrar el menu o no
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
 
-    //Con este método detectaremos que opción del menú ha sido pulsada
-    //el parametro MenuItem representa el objeto que fue seleccionado, no puede ser null
-    //En el valor de retorno decimos si queremos procesar el elemento en este metodo o no
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

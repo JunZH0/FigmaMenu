@@ -60,6 +60,23 @@ public class MainActivity extends AppCompatActivity {
         }else if(id == R.id.op1){
             Toast.makeText(this,"Opcion 1 elegida!",Toast.LENGTH_SHORT).show();
             return true;
+        }else if(id == R.id.op2){
+            Toast.makeText(this,"Opcion 2 elegida!",Toast.LENGTH_SHORT).show();
+            return true;
+        }else if(id == R.id.op3){
+            Toast.makeText(this,"Opcion 3 elegida!",Toast.LENGTH_SHORT).show();
+            return true;
+        }else if(id == R.id.op4){
+            Toast.makeText(this,"Opcion 4 elegida!",Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.share_action) {
+            Toast.makeText(this, "Opcion compartir pulsada", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.delete_action) {
+            Toast.makeText(this, "Opcion eliminar pulsada", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.create_pdf_action) {
+            Toast.makeText(this, "Opcion PDF pulsada", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.print_action) {
+            Toast.makeText(this, "Opcion imprimir pulsada", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
